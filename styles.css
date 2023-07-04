@@ -1,0 +1,25 @@
+*{
+    box-sizing: border-box;
+}
+
+#navbar-links li{
+    margin-right: 20px;
+}
+
+ul li{
+    text-align: center;
+}
+
+.c-input:focus{
+    outline: 0px;
+}
+
+@media screen and (min-width:768px){
+    .c-form{
+        width: 450px;
+    }
+}
+
+.c-form:hover{
+    box-shadow: 0px 4px 12px 0px grey;
+}
