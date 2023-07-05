@@ -13,28 +13,46 @@
     <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
+    <!-- Navbar Section [ Title - Links - Buy Button - Hamburger ] -->
+
     <div
       id="navbar"
-      class="container d-flex align-items-center justify-content-between"
+      class="container d-flex align-items-center justify-content-between mt-4"
     >
-      <h1 class="text-primary">Landkit.</h1>
-      <ul class="d-lg-flex list-unstyled align-items-center d-none">
-        <li class="me-3">
+      <h1 class="text-primary mb-0">Landkit.</h1>
+      <ul class="d-lg-flex list-unstyled align-items-center d-none pt-3">
+        <li class="me-5 opacity-50">
           <a href="#" class="text-decoration-none text-black">Landings</a>
         </li>
-        <li class="me-3">
+        <li class="me-5 opacity-50">
           <a href="#" class="text-decoration-none text-black">Pages</a>
         </li>
-        <li class="me-3">
+        <li class="me-5 opacity-50">
           <a href="#" class="text-decoration-none text-black">Account</a>
         </li>
-        <li class="me-3">
+        <li class="me-5 opacity-50">
           <a href="#" class="text-decoration-none text-black">Documentation</a>
         </li>
       </ul>
       <button class="btn btn-primary d-none d-lg-flex">Buy now</button>
-      <p class="btn btn-primary d-lg-none">menu</p>
+      <button class="btn d-lg-none">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          width="30"
+          height="30"
+          fill="currentColor"
+          class="bi bi-list"
+          viewBox="0 0 16 16"
+        >
+          <path
+            fill-rule="evenodd"
+            d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z"
+          />
+        </svg>
+      </button>
     </div>
+
+    <!-- Landing Section [ image - data ] -->
 
     <div id="landing" class="container mt-5">
       <div class="row">
@@ -62,6 +80,8 @@
         </div>
       </div>
     </div>
+
+    <!-- Purpose Section -->
 
     <div id="purpose" class="container">
       <div class="row mt-5 mb-5">
@@ -144,6 +164,8 @@
     </div>
 
     <hr />
+
+    <!-- Icons Section [ logos list ] -->
 
     <div id="icons" class="container mt-5 mb-5">
       <ul class="row d-flex justify-content-around list-unstyled">
