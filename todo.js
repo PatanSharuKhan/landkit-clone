@@ -9,6 +9,11 @@ function createAndAppend(todo,id){
     const todoItemClasses="col-12 col-md-6 m-auto d-flex justify-content-between border border-info p-2 rounded mb-2"
     todoItem.classList.add(...todoItemClasses.split(" "));
 
+    const itemCheckbox=document.createElement("input");
+    itemCheckbox.type="checkbox";
+    itemCheckbox.classList.add("bg-primary");
+    
+
     const itemDescription=document.createElement("p");
     const itemDescriptionClasses="lead mb-0";
     itemDescription.classList.add(...itemDescriptionClasses.split(" "));
@@ -24,7 +29,8 @@ function createAndAppend(todo,id){
         displayTodos()
     });
     
-    todoItem.appendChild(itemDescription)
+    todoItem.appendChild(itemCheckbox);
+    todoItem.appendChild(itemDescription);
     todoItem.appendChild(itemDeleteButton);
 
     todoItems.appendChild(todoItem);
