@@ -26,3 +26,17 @@
 #skewImage{
     transform: skew(-20deg,5deg);
 }
+
+.bg-blue{
+    background-color:#1b2a4e; 
+}
+
+.c-arrow{
+    width: 60px;
+    height: 60px;
+    font-size: 40px;
+}
+
+.c-carousal-image{
+    border-bottom-right-radius: 50%;
+}
