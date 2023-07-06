@@ -1,4 +1,6 @@
 const todoItems=document.getElementById("todoItems");
+const addBtn=document.getElementById("addBtn");
+
 
 let todos=["learn HTML","learn CSS","learn JS","learn Ruby"]
 
@@ -18,7 +20,6 @@ function createAndAppend(todo,id){
     itemDeleteButton.classList.add(...itemDeleteButtonClasses.split(" "));
     itemDeleteButton.textContent="Delete";
     itemDeleteButton.addEventListener("click",()=>{
-        todoItems.textContent=""
         todos=todos.filter(each=>each!==todo);
         displayTodos()
     });
@@ -32,9 +33,16 @@ function createAndAppend(todo,id){
 
 
 function displayTodos(){
+    todoItems.textContent=""
     for(let id in todos){
         createAndAppend(todos[id],id);
     }
 }
 
 displayTodos()
+
+addBtn.addEventListener("click",()=>{
+    const userInput=document.getElementById("userInput");
+    todos.push(userInput.value);
+    displayTodos()
+})
